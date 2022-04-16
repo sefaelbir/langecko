@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap");
 
 * {
   --primary: #228be6;
   --primary-dark: #1864ab;
-  --accent: #F9CA24;
-  --color: #535B6A;
+  --accent: #f9ca24;
+  --color: #535b6a;
   --text: #fff;
   --bg: #121212;
   --btn: #eee;
@@ -16,7 +16,7 @@ html {
 
 body {
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   height: 100%;
   line-height: 1;
@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;  
+  user-select: none;
   overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ h4 {
   font-weight: bold;
   margin-top: 10px;
   color: rgb(71, 71, 71);
-  font-family: 'Times', serif;
+  font-family: "Times", serif;
   font-style: italic;
   text-transform: lowercase;
   text-align: center;
@@ -101,7 +101,7 @@ span {
   padding: 1rem;
   outline: none;
   text-transform: lowercase;
-  width: calc(100% - 2rem);     
+  width: calc(100% - 2rem);
   font-weight: bold;
   width: 400px;
 }
@@ -114,7 +114,11 @@ span {
 .card {
   width: 400px;
   height: 500px;
-  background: linear-gradient(45deg, rgba(233,196,106 ,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(233, 196, 106, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -124,20 +128,20 @@ span {
 }
 
 .card:active {
-  animation:  shake 1s;
+  animation: shake 1s;
 }
 
-@keyframes shake{
-  0%{
-    transform: perspective(500px) translate3d(0,0,0);
+@keyframes shake {
+  0% {
+    transform: perspective(500px) translate3d(0, 0, 0);
     opacity: 1;
   }
-  25%{
-    transform: perspective(500px) translate3d(-50px,-50px,-50px);
+  25% {
+    transform: perspective(500px) translate3d(-50px, -50px, -50px);
     opacity: 0.2;
-  }    
-  100%{
-    transform: perspective(-1500px) translate3d(-100px,-50px,100px);
+  }
+  100% {
+    transform: perspective(-1500px) translate3d(-100px, -50px, 100px);
     opacity: 1;
   }
 }
@@ -166,7 +170,7 @@ span {
     width: 319px;
     height: 447px;
   }
-  }
+}
 
 /*    Scrollbar    */
 ::-webkit-scrollbar {
@@ -175,7 +179,6 @@ span {
 
 ::-webkit-scrollbar {
   width: 10px;
-  
 }
 ::-webkit-scrollbar-thumb {
   background: var(--btn);
@@ -199,18 +202,30 @@ span {
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  display:none;
+  display: none;
   animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 /*   right-bottom    */
