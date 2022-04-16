@@ -6,7 +6,7 @@ Langecko - Learn with random words english to turkish language
 ![App Screenshot](https://s7.gifyu.com/images/mobile509781fd36496ddb.gif)
 
 
-## Run Locally
+## 📍 Run Locally
 Clone the project
 
 ```bash
