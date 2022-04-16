@@ -13,5 +13,5 @@ Clone the project
   git clone http://github.com/sefaelbir/langecko
 ```
 
-## Feedback
+## 📧 Feedback
 If you have any feedback, please reach out to us at sefaelbir@gmail.com
