@@ -2,7 +2,8 @@
 Langecko - Learn with random words english to turkish language
 
 ## Screenshots
-![App Screenshot](https://gfycat.com/finishedunimportantcockerspaniel)
+![Web Screenshot](https://s7.gifyu.com/images/desktop.gif)
+![App Screenshot](https://s7.gifyu.com/images/mobile509781fd36496ddb.gif)
 
 
 ## Run Locally
