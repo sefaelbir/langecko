@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+
+* {
+  --primary: #228be6;
+  --primary-dark: #1864ab;
+  --accent: #F9CA24;
+  --color: #535B6A;
+  --text: #fff;
+  --bg: #121212;
+  --btn: #eee;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  height: 100%;
+  line-height: 1;
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;  
+  overflow: hidden;
+}
+
+body:hover {
+  cursor: pointer;
+}
+
+main {
+  margin: auto;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*    Text Features     */
+h1 {
+  margin-top: 100px;
+  display: inline-block;
+  font-size: 40px;
+  color: var(--text);
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  word-break: break-all;
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  color: var(--text);
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 130px;
+  font-weight: 100;
+}
+
+.pron {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(71, 71, 71);
+  font-family: 'Times', serif;
+  font-style: italic;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+span {
+  text-transform: none;
+}
+
+.sub {
+  color: gray;
+  margin-top: -15px;
+  font-size: 15px;
+  display: none;
+  font-weight: bold;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+}
+
+/*    Button    */
+.generate-btn {
+  border: 3px solid var(--text);
+  border-radius: 10px;
+  color: var(--btn);
+  font-weight: 500;
+  font-size: 1rem;
+  background: transparent;
+  padding: 1rem;
+  outline: none;
+  text-transform: lowercase;
+  width: calc(100% - 2rem);     
+  font-weight: bold;
+  width: 400px;
+}
+
+.generate-btn:hover {
+  cursor: pointer;
+}
+
+/*   Card   */
+.card {
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(45deg, rgba(233,196,106 ,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.card:active {
+  animation:  shake 1s;
+}
+
+@keyframes shake{
+  0%{
+    transform: perspective(500px) translate3d(0,0,0);
+    opacity: 1;
+  }
+  25%{
+    transform: perspective(500px) translate3d(-50px,-50px,-50px);
+    opacity: 0.2;
+  }    
+  100%{
+    transform: perspective(-1500px) translate3d(-100px,-50px,100px);
+    opacity: 1;
+  }
+}
+
+/*    Mobile View    */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .generate-btn {
+    display: none;
+  }
+  .pron {
+    font-size: 16px;
+  }
+  .sub {
+    margin: 15px;
+    display: inline;
+  }
+
+  .card {
+    width: 319px;
+    height: 447px;
+  }
+  }
+
+/*    Scrollbar    */
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+::-webkit-scrollbar-thumb {
+  background: var(--btn);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*     Loader    */
+#loader {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  background-image: url("/logomsu300.png");
+}
+/*     Content Animation     */
+.animate-page {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  display:none;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/*   right-bottom    */
+.right-bottom {
+  width: 150px;
+  height: 80px;
+  background: url(logomsu300.png);
+  right: 0;
+  bottom: 0;
+}
