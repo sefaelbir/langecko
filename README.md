@@ -3,7 +3,8 @@ Langecko - Learn with random words english to turkish language
 
 ## 📱 Screenshots
 ![Web Screenshot](https://s7.gifyu.com/images/desktop.gif)
-![App Screenshot](https://s7.gifyu.com/images/mobile509781fd36496ddb.gif=250x250)
+<img src="https://s7.gifyu.com/images/mobile509781fd36496ddb.gif" alt="App Screenshot" width="215" height="404" />
+
 
 
 ## 📍 Run Locally
